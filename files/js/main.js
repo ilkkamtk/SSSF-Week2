@@ -115,7 +115,7 @@ initMap();
 document.querySelector('#spyForm').addEventListener('submit', (evt) => {
     evt.preventDefault();
     const data = new FormData(evt.target);
-    const fileElement = event.target.querySelector('input[type=file]');
+    const fileElement = evt.target.querySelector('input[type=file]');
     const file = fileElement.files[0];
     data.append('file', file);
 
